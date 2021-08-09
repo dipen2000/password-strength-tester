@@ -39,11 +39,11 @@ body{
     content : "";
     position: absolute; 
     left : 0;
-    background-color : red;
+    background-color : var(--color);
     border-radius: 30px;
     height : 100%;
     width : calc(1% * var(--strength));
-    transition: width 200ms;
+    transition: width , background-color 200ms;
 }
 #password-input{
     text-align : center;
