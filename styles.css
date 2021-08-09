@@ -17,7 +17,7 @@ body{
     flex-direction : column;
     align-items : center;
     justify-content: center;
-    /* border : 3px solid red; */
+    /* border : 3px solid red;   */
     width : 60%;
     max-width: 1000px;
 }
@@ -37,12 +37,12 @@ body{
 }
 #strength-meter::before{
     content : "";
-    position: absolute;
+    position: absolute; 
     left : 0;
     background-color : red;
     border-radius: 30px;
     height : 100%;
-    width : 10%;
+    width : calc(1% * var(--strength));
     transition: width 200ms;
 }
 #password-input{
@@ -56,7 +56,7 @@ body{
     margin-bottom : 0.938rem;
 }
 
-#reasons-section > .strength{
+#status > .strength{
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: bolder;
     font-size : 1.25rem;
@@ -64,7 +64,8 @@ body{
     margin-bottom: 0.625rem;
 }
 
-#reasons-section > .reason{
+#reasons > .reason{
+    font-family: 'IBM Plex Sans', sans-serif;
     text-align: center;
     margin : 0.938rem;
     font-size : 1.125rem;

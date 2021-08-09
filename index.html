@@ -11,18 +11,22 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <script defer src="./script.js"></script>
     <title>Password strength tester</title>
 </head>
 <body>
     <div class="container">
         <h2 class="title">Passoword Strength Tester</h2>
         <div id="strength-meter"></div>
-        <input id="password-input" type="text" placeholder="Enter your password" value="password" autofocus aria-label="passord input">
+        <input id="password-input" type="text" placeholder="Enter your password"  autofocus aria-label="passord input">
         <div id="reasons-section">
-            <div class="strength">Very weak</div>
-            <div class="reason">Reason 1</div>
-            <div class="reason">Reason 2</div>
-            
+            <div id="status">
+                <!-- <div class="strength">Very weak</div> -->
+            </div>
+            <div id="reasons">
+                <!-- <div class="reason">Reason 1</div>
+                <div class="reason">Reason 2</div> -->
+            </div>
         </div>
     </div>
 </body>
